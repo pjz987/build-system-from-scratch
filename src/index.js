@@ -1,9 +1,17 @@
-const Hello = require('./hello')
-const yo = require('yo-yo')
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Hello from './hello'
+// import yo from 'yo-yo'
 
-const container = document.getElementById('app-container')
+// const container = document.getElementById('app-container')
 
-const el = Hello("Ben Bitdiddle")
+ReactDOM.render(
+  <Hello name='Ben Bitdiddle' />,
+  document.getElementById('app-container')
+)
+// ReactDOM.render()
 
-// mount component to the DOM
-container.appendChild(el)
+// const el = Hello("Ben Bitdiddle")
+
+// // mount component to the DOM
+// container.appendChild(el)

@@ -1,17 +1,29 @@
 {
-  "name": "todo-list-browserify",
+  "name": "system-from-scratch",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npx watchify src/index.js -o bundle.js --debug --verbose",
-    "start": "npm run watch"
+    "start": "npm run watch",
+    "webpack": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "watchify": "^3.11.1",
     "yo-yo": "^1.4.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   }
 }
